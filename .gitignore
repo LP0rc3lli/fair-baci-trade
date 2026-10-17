@@ -218,3 +218,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ── fair-baci-trade project-specific ──────────────────────────────────────────
+# Raw BACI downloads (large files, never committed)
+data/raw/
+*.zip
+
+# Snakemake runtime artefacts
+.snakemake/
+workflow/logs/
+
+# FAIR Data Point database volumes
+fdp/mongo/
+fdp/graphdb/
+
+# Python virtual environment
+.venv/
