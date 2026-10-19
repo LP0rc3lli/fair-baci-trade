@@ -1,15 +1,54 @@
-# Measurement rules only. No slice, lookup or model is built here.
 configfile: "workflow/config.yaml"
 
 REL = config["dataset"]["release"]
 REV = config["dataset"]["revision"]
 YEARS = config["years"]
-assert len(YEARS) == 1, "measurement rules currently expect a single year"
+assert len(YEARS) == 1, "workflow currently expects a single year"
 YEAR = YEARS[0]
+SCOPE = config.get("scope_label", "chipmaking-inputs")
 
 RAW = f"data/raw/BACI_{REV}_Y{YEAR}_V{REL}.csv"
+COUNTRIES = f"data/raw/country_codes_V{REL}.csv"
+PRODUCTS = f"data/raw/product_codes_{REV}_V{REL}.csv"
 TAG = f"{REV.lower()}_{YEAR}"
 
+SLICE = f"data/original/baci_{TAG}_{SCOPE}_original.csv"
+COUNTRY_LOOKUP = f"data/original/country_lookup_{TAG}_{SCOPE}.csv"
+PRODUCT_LOOKUP = f"data/original/product_lookup_{TAG}_{SCOPE}.csv"
+
+rule all:
+    input:
+        SLICE,
+        COUNTRY_LOOKUP,
+        PRODUCT_LOOKUP,
+
+rule make_slice:
+    input:
+        raw=RAW,
+    output:
+        slice_csv=SLICE,
+    params:
+        products=config["products"],
+        year=YEAR,
+    log:
+        "workflow/logs/make_slice.log",
+    script:
+        "scripts/make_slice.py"
+
+rule make_lookups:
+    input:
+        slice_csv=SLICE,
+        countries=COUNTRIES,
+        products=PRODUCTS,
+    output:
+        country_lookup=COUNTRY_LOOKUP,
+        product_lookup=PRODUCT_LOOKUP,
+    log:
+        "workflow/logs/make_lookups.log",
+    script:
+        "scripts/make_lookups.py"
+
+# Measurement rules (reproducible intermediate evaluation)
 rule measure_all:
     input:
         f"data/intermediate/candidate_measurements_{TAG}.csv",
@@ -29,7 +68,7 @@ rule measure_candidates:
 rule special_codes:
     input:
         flows=f"data/intermediate/candidate_flows_{TAG}.csv",
-        countries=f"data/raw/country_codes_V{REL}.csv",
+        countries=COUNTRIES,
     output:
         special=f"data/intermediate/candidate_special_codes_{TAG}.csv",
         classification=f"data/intermediate/country_code_classification_{TAG}.csv",
@@ -37,3 +76,4 @@ rule special_codes:
         "workflow/logs/special_codes.log",
     script:
         "scripts/special_codes.py"
+
