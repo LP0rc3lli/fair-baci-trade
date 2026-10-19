@@ -1,0 +1,4 @@
+scope,codes,rows,over_limit_by,exceeds_limit,distinct_exporters,distinct_importers,distinct_dyads,distinct_pairs_with_product,total_value_kUSD,q_blank_rows,q_unparsable_rows,q_zero_rows,q_negative_rows,share_q_missing_or_zero,duplicate_t_k_i_j_rows,distinct_years
+alone:381800,381800,1730,0,False,107,166,1730,1730,20993833.277,138,0,0,0,0.079769,0,1
+alone:848620,848620,1454,0,False,83,151,1454,1454,71197196.979,69,0,0,0,0.047455,0,1
+combo:381800+848620,381800+848620,3184,0,False,119,180,2198,3184,92191030.256,207,0,0,0,0.065013,0,1

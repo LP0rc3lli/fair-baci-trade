@@ -1,0 +1,239 @@
+country_code,country_name,country_iso2,country_iso3,category
+4,Afghanistan,AF,AFG,sovereign_or_other
+8,Albania,AL,ALB,sovereign_or_other
+12,Algeria,DZ,DZA,sovereign_or_other
+16,American Samoa,AS,ASM,territory_or_dependency
+20,Andorra,AD,AND,sovereign_or_other
+24,Angola,AO,AGO,sovereign_or_other
+28,Antigua and Barbuda,AG,ATG,sovereign_or_other
+31,Azerbaijan,AZ,AZE,sovereign_or_other
+32,Argentina,AR,ARG,sovereign_or_other
+36,Australia,AU,AUS,sovereign_or_other
+40,Austria,AT,AUT,sovereign_or_other
+44,Bahamas,BS,BHS,sovereign_or_other
+48,Bahrain,BH,BHR,sovereign_or_other
+50,Bangladesh,BD,BGD,sovereign_or_other
+51,Armenia,AM,ARM,sovereign_or_other
+52,Barbados,BB,BRB,sovereign_or_other
+56,Belgium,BE,BEL,sovereign_or_other
+58,Belgium-Luxembourg (...1998),BE,BEL,historical
+60,Bermuda,BM,BMU,territory_or_dependency
+64,Bhutan,BT,BTN,sovereign_or_other
+68,Bolivia (Plurinational State of),BO,BOL,sovereign_or_other
+70,Bosnia Herzegovina,BA,BIH,sovereign_or_other
+72,Botswana,BW,BWA,sovereign_or_other
+76,Brazil,BR,BRA,sovereign_or_other
+84,Belize,BZ,BLZ,sovereign_or_other
+86,Br. Indian Ocean Terr.,IO,IOT,territory_or_dependency
+90,Solomon Isds,SB,SLB,sovereign_or_other
+92,Br. Virgin Isds,VG,VGB,territory_or_dependency
+96,Brunei Darussalam,BN,BRN,sovereign_or_other
+100,Bulgaria,BG,BGR,sovereign_or_other
+104,Myanmar,MM,MMR,sovereign_or_other
+108,Burundi,BI,BDI,sovereign_or_other
+112,Belarus,BY,BLR,sovereign_or_other
+116,Cambodia,KH,KHM,sovereign_or_other
+120,Cameroon,CM,CMR,sovereign_or_other
+124,Canada,CA,CAN,sovereign_or_other
+132,Cabo Verde,CV,CPV,sovereign_or_other
+136,Cayman Isds,KY,CYM,territory_or_dependency
+140,Central African Rep.,CF,CAF,sovereign_or_other
+144,Sri Lanka,LK,LKA,sovereign_or_other
+148,Chad,TD,TCD,sovereign_or_other
+152,Chile,CL,CHL,sovereign_or_other
+156,China,CN,CHN,sovereign_or_other
+162,Christmas Isds,CX,CXR,territory_or_dependency
+166,Cocos Isds,CC,CCK,territory_or_dependency
+170,Colombia,CO,COL,sovereign_or_other
+174,Comoros,KM,COM,sovereign_or_other
+175,Mayotte (Overseas France),YT,MYT,territory_or_dependency
+178,Congo,CG,COG,sovereign_or_other
+180,Dem. Rep. of the Congo,CD,COD,sovereign_or_other
+184,Cook Isds,CK,COK,territory_or_dependency
+188,Costa Rica,CR,CRI,sovereign_or_other
+191,Croatia,HR,HRV,sovereign_or_other
+192,Cuba,CU,CUB,sovereign_or_other
+196,Cyprus,CY,CYP,sovereign_or_other
+200,Czechoslovakia (...1992),CS,CSK,historical
+203,Czechia,CZ,CZE,sovereign_or_other
+204,Benin,BJ,BEN,sovereign_or_other
+208,Denmark,DK,DNK,sovereign_or_other
+212,Dominica,DM,DMA,sovereign_or_other
+214,Dominican Rep.,DO,DOM,sovereign_or_other
+218,Ecuador,EC,ECU,sovereign_or_other
+222,El Salvador,SV,SLV,sovereign_or_other
+226,Equatorial Guinea,GQ,GNQ,sovereign_or_other
+231,Ethiopia,ET,ETH,sovereign_or_other
+232,Eritrea,ER,ERI,sovereign_or_other
+233,Estonia,EE,EST,sovereign_or_other
+238,Falkland Isds (Malvinas),FK,FLK,territory_or_dependency
+242,Fiji,FJ,FJI,sovereign_or_other
+246,Finland,FI,FIN,sovereign_or_other
+251,France,FR,FRA,sovereign_or_other
+258,French Polynesia,PF,PYF,territory_or_dependency
+260,Fr. South Antarctic Terr.,TF,ATF,territory_or_dependency
+262,Djibouti,DJ,DJI,sovereign_or_other
+266,Gabon,GA,GAB,sovereign_or_other
+268,Georgia,GE,GEO,sovereign_or_other
+270,Gambia,GM,GMB,sovereign_or_other
+275,State of Palestine,PS,PSE,territory_or_dependency
+276,Germany,DE,DEU,sovereign_or_other
+278,Dem. Rep. of Germany (...1990),DD,DDR,historical
+280,Fed. Rep. of Germany (...1990),DE,DEU,historical
+288,Ghana,GH,GHA,sovereign_or_other
+292,Gibraltar,GI,GIB,territory_or_dependency
+296,Kiribati,KI,KIR,sovereign_or_other
+300,Greece,GR,GRC,sovereign_or_other
+304,Greenland,GL,GRL,territory_or_dependency
+308,Grenada,GD,GRD,sovereign_or_other
+316,Guam,GU,GUM,territory_or_dependency
+320,Guatemala,GT,GTM,sovereign_or_other
+324,Guinea,GN,GIN,sovereign_or_other
+328,Guyana,GY,GUY,sovereign_or_other
+332,Haiti,HT,HTI,sovereign_or_other
+340,Honduras,HN,HND,sovereign_or_other
+344,"China, Hong Kong SAR",HK,HKG,territory_or_dependency
+348,Hungary,HU,HUN,sovereign_or_other
+352,Iceland,IS,ISL,sovereign_or_other
+360,Indonesia,ID,IDN,sovereign_or_other
+364,Iran,IR,IRN,sovereign_or_other
+368,Iraq,IQ,IRQ,sovereign_or_other
+372,Ireland,IE,IRL,sovereign_or_other
+376,Israel,IL,ISR,sovereign_or_other
+380,Italy,IT,ITA,sovereign_or_other
+384,CÃ´te d'Ivoire,CI,CIV,sovereign_or_other
+388,Jamaica,JM,JAM,sovereign_or_other
+392,Japan,JP,JPN,sovereign_or_other
+398,Kazakhstan,KZ,KAZ,sovereign_or_other
+400,Jordan,JO,JOR,sovereign_or_other
+404,Kenya,KE,KEN,sovereign_or_other
+408,Dem. People's Rep. of Korea,KP,PRK,sovereign_or_other
+410,Rep. of Korea,KR,KOR,sovereign_or_other
+414,Kuwait,KW,KWT,sovereign_or_other
+417,Kyrgyzstan,KG,KGZ,sovereign_or_other
+418,Lao People's Dem. Rep.,LA,LAO,sovereign_or_other
+422,Lebanon,LB,LBN,sovereign_or_other
+426,Lesotho,LS,LSO,sovereign_or_other
+428,Latvia,LV,LVA,sovereign_or_other
+430,Liberia,LR,LBR,sovereign_or_other
+434,Libya,LY,LBY,sovereign_or_other
+440,Lithuania,LT,LTU,sovereign_or_other
+442,Luxembourg,LU,LUX,sovereign_or_other
+446,"China, Macao SAR",MO,MAC,territory_or_dependency
+450,Madagascar,MG,MDG,sovereign_or_other
+454,Malawi,MW,MWI,sovereign_or_other
+458,Malaysia,MY,MYS,sovereign_or_other
+462,Maldives,MV,MDV,sovereign_or_other
+466,Mali,ML,MLI,sovereign_or_other
+470,Malta,MT,MLT,sovereign_or_other
+478,Mauritania,MR,MRT,sovereign_or_other
+480,Mauritius,MU,MUS,sovereign_or_other
+484,Mexico,MX,MEX,sovereign_or_other
+490,"Other Asia, nes",,S19,nes
+496,Mongolia,MN,MNG,sovereign_or_other
+498,Rep. of Moldova,MD,MDA,sovereign_or_other
+499,Montenegro,ME,MNE,sovereign_or_other
+500,Montserrat,MS,MSR,territory_or_dependency
+504,Morocco,MA,MAR,sovereign_or_other
+508,Mozambique,MZ,MOZ,sovereign_or_other
+512,Oman,OM,OMN,sovereign_or_other
+516,Namibia,,NAM,sovereign_or_other
+520,Nauru,NR,NRU,sovereign_or_other
+524,Nepal,NP,NPL,sovereign_or_other
+528,Netherlands,NL,NLD,sovereign_or_other
+530,Netherlands Antilles (...2010),AN,ANT,historical
+531,CuraÃ§ao,CW,CUW,territory_or_dependency
+533,Aruba,AW,ABW,territory_or_dependency
+534,Saint Maarten,SX,SXM,territory_or_dependency
+535,Bonaire,BQ,BES,territory_or_dependency
+540,New Caledonia,NC,NCL,territory_or_dependency
+548,Vanuatu,VU,VUT,sovereign_or_other
+554,New Zealand,NZ,NZL,sovereign_or_other
+558,Nicaragua,NI,NIC,sovereign_or_other
+562,Niger,NE,NER,sovereign_or_other
+566,Nigeria,NG,NGA,sovereign_or_other
+570,Niue,NU,NIU,territory_or_dependency
+574,Norfolk Isds,NF,NFK,territory_or_dependency
+579,Norway,NO,NOR,sovereign_or_other
+580,N. Mariana Isds,MP,MNP,territory_or_dependency
+583,FS Micronesia,FM,FSM,sovereign_or_other
+584,Marshall Isds,MH,MHL,sovereign_or_other
+585,Palau,PW,PLW,sovereign_or_other
+586,Pakistan,PK,PAK,sovereign_or_other
+591,Panama,PA,PAN,sovereign_or_other
+598,Papua New Guinea,PG,PNG,sovereign_or_other
+600,Paraguay,PY,PRY,sovereign_or_other
+604,Peru,PE,PER,sovereign_or_other
+608,Philippines,PH,PHL,sovereign_or_other
+612,Pitcairn,PN,PCN,territory_or_dependency
+616,Poland,PL,POL,sovereign_or_other
+620,Portugal,PT,PRT,sovereign_or_other
+624,Guinea-Bissau,GW,GNB,sovereign_or_other
+626,Timor-Leste,TL,TLS,sovereign_or_other
+634,Qatar,QA,QAT,sovereign_or_other
+642,Romania,RO,ROU,sovereign_or_other
+643,Russian Federation,RU,RUS,sovereign_or_other
+646,Rwanda,RW,RWA,sovereign_or_other
+652,Saint BarthÃ©lemy,BL,BLM,territory_or_dependency
+654,Saint Helena,SH,SHN,territory_or_dependency
+659,Saint Kitts and Nevis,KN,KNA,sovereign_or_other
+660,Anguilla,AI,AIA,territory_or_dependency
+662,Saint Lucia,LC,LCA,sovereign_or_other
+666,Saint Pierre and Miquelon,PM,SPM,territory_or_dependency
+670,Saint Vincent and the Grenadines,VC,VCT,sovereign_or_other
+674,San Marino,SM,SMR,sovereign_or_other
+678,Sao Tome and Principe,ST,STP,sovereign_or_other
+682,Saudi Arabia,SA,SAU,sovereign_or_other
+686,Senegal,SN,SEN,sovereign_or_other
+688,Serbia,RS,SRB,sovereign_or_other
+690,Seychelles,SC,SYC,sovereign_or_other
+694,Sierra Leone,SL,SLE,sovereign_or_other
+697,"Europe EFTA, nes",,R20,nes
+699,India,IN,IND,sovereign_or_other
+702,Singapore,SG,SGP,sovereign_or_other
+703,Slovakia,SK,SVK,sovereign_or_other
+704,Viet Nam,VN,VNM,sovereign_or_other
+705,Slovenia,SI,SVN,sovereign_or_other
+706,Somalia,SO,SOM,sovereign_or_other
+710,South Africa,ZA,ZAF,sovereign_or_other
+711,Southern African Customs Union (...1999),,ZA1,historical
+716,Zimbabwe,ZW,ZWE,sovereign_or_other
+724,Spain,ES,ESP,sovereign_or_other
+728,South Sudan,SS,SSD,sovereign_or_other
+729,Sudan,SD,SDN,sovereign_or_other
+736,Sudan (...2011),SD,SDN,historical
+740,Suriname,SR,SUR,sovereign_or_other
+748,Eswatini,SZ,SWZ,sovereign_or_other
+752,Sweden,SE,SWE,sovereign_or_other
+757,Switzerland,CH,CHE,sovereign_or_other
+760,Syria,SY,SYR,sovereign_or_other
+762,Tajikistan,TJ,TJK,sovereign_or_other
+764,Thailand,TH,THA,sovereign_or_other
+768,Togo,TG,TGO,sovereign_or_other
+772,Tokelau,TK,TKL,territory_or_dependency
+776,Tonga,TO,TON,sovereign_or_other
+780,Trinidad and Tobago,TT,TTO,sovereign_or_other
+784,United Arab Emirates,AE,ARE,sovereign_or_other
+788,Tunisia,TN,TUN,sovereign_or_other
+792,TÃ¼rkiye,TR,TUR,sovereign_or_other
+795,Turkmenistan,TM,TKM,sovereign_or_other
+796,Turks and Caicos Isds,TC,TCA,territory_or_dependency
+798,Tuvalu,TV,TUV,sovereign_or_other
+800,Uganda,UG,UGA,sovereign_or_other
+804,Ukraine,UA,UKR,sovereign_or_other
+807,North Macedonia,MK,MKD,sovereign_or_other
+810,USSR (...1990),SU,SUN,historical
+818,Egypt,EG,EGY,sovereign_or_other
+826,United Kingdom,GB,GBR,sovereign_or_other
+834,United Rep. of Tanzania,TZ,TZA,sovereign_or_other
+842,USA,US,USA,sovereign_or_other
+849,US Misc. Pacific Isds,PU,PUS,territory_or_dependency
+854,Burkina Faso,BF,BFA,sovereign_or_other
+858,Uruguay,UY,URY,sovereign_or_other
+860,Uzbekistan,UZ,UZB,sovereign_or_other
+862,Venezuela,VE,VEN,sovereign_or_other
+876,Wallis and Futuna Isds,WF,WLF,territory_or_dependency
+882,Samoa,WS,WSM,sovereign_or_other
+887,Yemen,YE,YEM,sovereign_or_other
+891,Serbia and Montenegro (...2005),CS,SCG,historical
+894,Zambia,ZM,ZMB,sovereign_or_other

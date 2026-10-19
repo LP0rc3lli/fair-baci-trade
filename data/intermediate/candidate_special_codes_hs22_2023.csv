@@ -1,0 +1,31 @@
+product,role,country_code,country_name,category,rank,n_countries_in_role,rows,value,share_pct
+381800,exporter,490,"Other Asia, nes",nes,4,107,48,1560268.577,7.432
+381800,exporter,344,"China, Hong Kong SAR",territory_or_dependency,21,107,26,20149.96,0.096
+381800,exporter,531,CuraÃ§ao,territory_or_dependency,60,107,2,34.913,0.0
+381800,exporter,260,Fr. South Antarctic Terr.,territory_or_dependency,77,107,1,4.312,0.0
+381800,exporter,580,N. Mariana Isds,territory_or_dependency,81,107,1,2.826,0.0
+381800,exporter,258,French Polynesia,territory_or_dependency,97,107,1,0.137,0.0
+381800,exporter,540,New Caledonia,territory_or_dependency,103,107,1,0.048,0.0
+381800,exporter,652,Saint BarthÃ©lemy,territory_or_dependency,104,107,1,0.037,0.0
+381800,importer,490,"Other Asia, nes",nes,1,166,39,3155338.11,15.03
+381800,importer,344,"China, Hong Kong SAR",territory_or_dependency,16,166,25,180062.36,0.858
+381800,importer,446,"China, Macao SAR",territory_or_dependency,51,166,5,308.399,0.001
+381800,importer,92,Br. Virgin Isds,territory_or_dependency,118,166,1,7.0,0.0
+381800,importer,304,Greenland,territory_or_dependency,141,166,1,1.578,0.0
+381800,importer,540,New Caledonia,territory_or_dependency,151,166,1,0.883,0.0
+381800,importer,654,Saint Helena,territory_or_dependency,153,166,1,0.868,0.0
+381800,importer,316,Guam,territory_or_dependency,161,166,1,0.162,0.0
+381800,importer,292,Gibraltar,territory_or_dependency,164,166,1,0.008,0.0
+381800,importer,666,Saint Pierre and Miquelon,territory_or_dependency,166,166,1,0.001,0.0
+848620,exporter,490,"Other Asia, nes",nes,6,83,39,2534255.015,3.559
+848620,exporter,344,"China, Hong Kong SAR",territory_or_dependency,26,83,41,18993.172,0.027
+848620,exporter,500,Montserrat,territory_or_dependency,62,83,1,13.81,0.0
+848620,importer,490,"Other Asia, nes",nes,3,151,30,11400621.334,16.013
+848620,importer,344,"China, Hong Kong SAR",territory_or_dependency,9,151,18,1032447.678,1.45
+848620,importer,86,Br. Indian Ocean Terr.,territory_or_dependency,107,151,1,20.787,0.0
+848620,importer,534,Saint Maarten,territory_or_dependency,119,151,1,8.648,0.0
+848620,importer,136,Cayman Isds,territory_or_dependency,136,151,1,3.29,0.0
+848620,importer,258,French Polynesia,territory_or_dependency,142,151,1,1.152,0.0
+848620,importer,60,Bermuda,territory_or_dependency,145,151,1,0.374,0.0
+848620,importer,184,Cook Isds,territory_or_dependency,147,151,1,0.231,0.0
+848620,importer,570,Niue,territory_or_dependency,150,151,1,0.014,0.0

@@ -1,0 +1,27 @@
+# Slice and source parameters. Changing the slice must only require editing this file.
+
+dataset:
+  name: "CEPII BACI"
+  release: "202601"
+  revision: "HS22"
+
+# Single year for now. (A later extension to 2022-2024 is to be discussed.)
+years:
+  - 2023
+
+# Explicit list of HS6 codes. Read as STRINGS (quoted). No chapter/heading/prefix logic anywhere.
+# Decided 2026-10-17: 381800 + 848620 (854231 was measured at 6,760 rows alone and dropped).
+products:
+  - "381800"
+  - "848620"
+
+# Short label used in output file names (baci_hs<rev>_<year>_<scope>_original.csv).
+# Chosen 2026-10-19 (suggested by the reviewer, accepted by the student).
+scope_label: "chipmaking-inputs"
+
+# Measurement only: combinations of the codes above to compare.
+# Every code listed here must also be in `products`.
+measurement:
+  row_limit: 5000
+  combinations:
+    - ["381800", "848620"]
