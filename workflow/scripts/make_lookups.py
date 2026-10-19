@@ -1,7 +1,9 @@
 """Generate country and product lookup tables for entities occurring in the slice.
 
 - Joins codes with BACI metadata files.
-- Preserves ISO alpha-2 (including Namibia 'NA') and ISO alpha-3.
+- Preserves ISO alpha-2 and ISO alpha-3.
+- Restores Namibia's ISO alpha-2 'NA' (516), which is blank in the upstream file
+  ("NA" was most likely read as a missing value when CEPII exported it).
 - Repairs the 4 known double-encoded country names without touching raw files.
 - Keeps verbatim product descriptions.
 """
@@ -41,6 +43,10 @@ def repair_name(row):
 
 countries_raw["country_name"] = countries_raw.apply(repair_name, axis=1)
 
+# Restore Namibia's ISO alpha-2. Only fill it if it is blank, so a future fixed release is not overridden.
+nam_mask = (countries_raw["country_code"] == "516") & (countries_raw["country_iso2"] == "")
+countries_raw.loc[nam_mask, "country_iso2"] = "NA"
+
 # Filter for active countries occurring in slice
 country_lookup = countries_raw[countries_raw["country_code"].isin(active_country_codes)].copy()
 country_lookup = country_lookup.sort_values("country_code", key=lambda col: col.astype(int)).reset_index(drop=True)
@@ -49,10 +55,11 @@ country_lookup = country_lookup.sort_values("country_code", key=lambda col: col.
 assert len(country_lookup) == len(active_country_codes), (
     f"Mismatch in country lookup count: expected {len(active_country_codes)}, got {len(country_lookup)}"
 )
-# Check Namibia ISO2 preserved as 'NA'
+# Check Namibia ISO codes are both present
 if "516" in active_country_codes:
     nam = country_lookup[country_lookup["country_code"] == "516"].iloc[0]
-    assert nam["country_iso2"] == "NA" or nam["country_iso3"] == "NAM", "Namibia ISO code corrupted"
+    assert nam["country_iso2"] == "NA", f"Namibia ISO2 is {nam['country_iso2']!r}, expected 'NA'"
+    assert nam["country_iso3"] == "NAM", f"Namibia ISO3 is {nam['country_iso3']!r}, expected 'NAM'"
 
 # Write country lookup
 country_lookup.to_csv(out_country, index=False, quoting=csv.QUOTE_MINIMAL)
