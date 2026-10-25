@@ -1,0 +1,52 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<http://localhost/dataset/bf5270bd-27f5-463a-aad8-f94f65616145> a dcat:Resource, dcat:Dataset;
+  <http://www.w3.org/2000/01/rdf-schema#label> "CEPII BACI Trade Data – HS22 2023 (Chipmaking Inputs Slice)";
+  dcterms:title "CEPII BACI Trade Data – HS22 2023 (Chipmaking Inputs Slice)";
+  dcat:version "202601";
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2026-10-25T12:49:30.680135001Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2026-10-25T12:51:09.378529398Z"^^xsd:dateTime;
+  dcterms:license <https://spdx.org/licenses/etalab-2.0>;
+  dcterms:description "Bilateral trade flows between countries at HS 6-digit product level, filtered to the chipmaking-inputs product slice for 2023 (BACI HS22, release 202601), sourced from CEPII.";
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <http://localhost/dataset/bf5270bd-27f5-463a-aad8-f94f65616145#identifier>;
+  dcterms:accessRights <http://localhost/dataset/bf5270bd-27f5-463a-aad8-f94f65616145#accessRights>;
+  dcterms:publisher [ a foaf:Agent;
+      foaf:name "Lorenzo Porcelli"
+    ];
+  dcterms:isPartOf <http://localhost/catalog/8f6ba21d-3d06-4181-95a4-aaeac5ba6656>;
+  <http://semanticscience.org/resource/SIO_000628> <http://localhost/dataset/bf5270bd-27f5-463a-aad8-f94f65616145/metrics/445c0a70d1e214e545b261559e2842f4>,
+    <http://localhost/dataset/bf5270bd-27f5-463a-aad8-f94f65616145/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
+  dcterms:creator "CEPII";
+  dcterms:temporal "2023"^^xsd:gYear;
+  dcat:distribution <http://localhost/distribution/371d1c73-f3b6-457c-be6e-ff13288e881d>,
+    <http://localhost/distribution/80aa044e-ad82-4e51-8cbf-5db75846f678>;
+  dcterms:conformsTo <http://localhost/profile/2f08228e-1789-40f8-84cd-28e3288c3604> .
+
+<http://localhost/dataset/bf5270bd-27f5-463a-aad8-f94f65616145#identifier> a <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "http://localhost/dataset/bf5270bd-27f5-463a-aad8-f94f65616145" .
+
+<http://localhost/dataset/bf5270bd-27f5-463a-aad8-f94f65616145#accessRights> a dcterms:RightsStatement;
+  dcterms:description "This resource has no access restriction" .
+
+<http://localhost/dataset/bf5270bd-27f5-463a-aad8-f94f65616145/metrics/445c0a70d1e214e545b261559e2842f4>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.ietf.org/rfc/rfc3986.txt>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<http://localhost/dataset/bf5270bd-27f5-463a-aad8-f94f65616145/metrics/5d27e854a9e78eb3f663331cd47cdc13>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.wikidata.org/wiki/Q8777>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.wikidata.org/wiki/Q8777> .
+
+<http://localhost/distribution/> a ldp:DirectContainer;
+  dcterms:title "Distributions";
+  ldp:membershipResource <http://localhost/dataset/bf5270bd-27f5-463a-aad8-f94f65616145>;
+  ldp:hasMemberRelation dcat:distribution;
+  ldp:contains <http://localhost/distribution/371d1c73-f3b6-457c-be6e-ff13288e881d>,
+    <http://localhost/distribution/80aa044e-ad82-4e51-8cbf-5db75846f678> .
+
+<http://localhost/profile/2f08228e-1789-40f8-84cd-28e3288c3604> <http://www.w3.org/2000/01/rdf-schema#label>
+    "Dataset Profile" .

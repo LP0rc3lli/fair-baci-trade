@@ -1,0 +1,11 @@
+instance:
+  clientUrl: http://localhost
+  persistentUrl: http://localhost
+
+repository:
+  type: 4
+  graphDb:
+    url: http://host.docker.internal:7200
+    repository: fdp
+    username: fdp
+    password: fdp

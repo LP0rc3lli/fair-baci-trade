@@ -1,0 +1,46 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<http://localhost/distribution/80aa044e-ad82-4e51-8cbf-5db75846f678> a dcat:Resource,
+    dcat:Distribution;
+  <http://www.w3.org/2000/01/rdf-schema#label> "CEPII BACI Trade Data – HS22 2023 (Chipmaking Inputs Slice) – FAIRified";
+  dcterms:title "CEPII BACI Trade Data – HS22 2023 (Chipmaking Inputs Slice) – FAIRified";
+  dcat:version "1.0";
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2026-10-25T12:51:08.606452331Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2026-10-25T12:51:08.606452331Z"^^xsd:dateTime;
+  dcterms:license <https://spdx.org/licenses/etalab-2.0>;
+  dcterms:description "The FAIRified version of the CEPII BACI trade data (chipmaking-inputs slice, 2023, BACI HS22 release 202601), serialized as RDF/Turtle per the project's semantic data model.";
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <http://localhost/distribution/80aa044e-ad82-4e51-8cbf-5db75846f678#identifier>;
+  dcterms:accessRights <http://localhost/distribution/80aa044e-ad82-4e51-8cbf-5db75846f678#accessRights>;
+  dcterms:publisher [ a foaf:Agent;
+      foaf:name "Lorenzo Porcelli"
+    ];
+  dcterms:isPartOf <http://localhost/dataset/bf5270bd-27f5-463a-aad8-f94f65616145>;
+  <http://semanticscience.org/resource/SIO_000628> <http://localhost/distribution/80aa044e-ad82-4e51-8cbf-5db75846f678/metrics/445c0a70d1e214e545b261559e2842f4>,
+    <http://localhost/distribution/80aa044e-ad82-4e51-8cbf-5db75846f678/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
+  dcat:downloadURL <https://w3id.org/FAIR-course-UT/2026/group13/dataset/fairified>;
+  dcat:mediaType <https://www.iana.org/assignments/media-types/text/turtle>;
+  dcterms:conformsTo <http://localhost/profile/02c649de-c579-43bb-b470-306abdc808c7> .
+
+<http://localhost/distribution/80aa044e-ad82-4e51-8cbf-5db75846f678#identifier> a
+    <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "http://localhost/distribution/80aa044e-ad82-4e51-8cbf-5db75846f678" .
+
+<http://localhost/distribution/80aa044e-ad82-4e51-8cbf-5db75846f678#accessRights>
+  a dcterms:RightsStatement;
+  dcterms:description "This resource has no access restriction" .
+
+<http://localhost/distribution/80aa044e-ad82-4e51-8cbf-5db75846f678/metrics/445c0a70d1e214e545b261559e2842f4>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.ietf.org/rfc/rfc3986.txt>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<http://localhost/distribution/80aa044e-ad82-4e51-8cbf-5db75846f678/metrics/5d27e854a9e78eb3f663331cd47cdc13>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.wikidata.org/wiki/Q8777>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.wikidata.org/wiki/Q8777> .
+
+<http://localhost/profile/02c649de-c579-43bb-b470-306abdc808c7> <http://www.w3.org/2000/01/rdf-schema#label>
+    "Distribution Profile" .
