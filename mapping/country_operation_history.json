@@ -1,0 +1,552 @@
+{
+  "entries": [
+    {
+      "description": "Save RDF schema skeleton",
+      "operation": {
+        "op": "rdf-extension/save-rdf-schema",
+        "schema": {
+          "prefixes": [
+            {
+              "name": "rdf",
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            },
+            {
+              "name": "owl",
+              "uri": "http://www.w3.org/2002/07/owl#"
+            },
+            {
+              "name": "skos",
+              "uri": "http://www.w3.org/2004/02/skos/core#"
+            },
+            {
+              "name": "rdfs",
+              "uri": "http://www.w3.org/2000/01/rdf-schema#"
+            },
+            {
+              "name": "foaf",
+              "uri": "http://xmlns.com/foaf/0.1/"
+            }
+          ],
+          "baseUri": "https://w3id.org/FAIR-course-UT/2026/group13/data#",
+          "rootNodes": [
+            {
+              "nodeType": "cell-as-resource",
+              "columnName": "country_code",
+              "expression": "\"area/\" + value",
+              "isRowNumberCell": false,
+              "links": [
+                {
+                  "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                  "curie": "rdfs:label",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "country_name",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#isoAlpha3",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#isoAlpha3",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "country_iso3",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "http://www.w3.org/2002/07/owl#sameAs",
+                  "curie": "owl:sameAs",
+                  "target": {
+                    "nodeType": "cell-as-resource",
+                    "columnName": "countryURI",
+                    "expression": "value",
+                    "isRowNumberCell": false,
+                    "links": [],
+                    "rdfTypes": []
+                  }
+                }
+              ],
+              "rdfTypes": [
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#TradePartnerArea",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#TradePartnerArea"
+                }
+              ]
+            }
+          ]
+        },
+        "description": "Save RDF schema skeleton"
+      }
+    },
+    {
+      "description": "Save RDF schema skeleton",
+      "operation": {
+        "op": "rdf-extension/save-rdf-schema",
+        "schema": {
+          "prefixes": [
+            {
+              "name": "rdf",
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            },
+            {
+              "name": "owl",
+              "uri": "http://www.w3.org/2002/07/owl#"
+            },
+            {
+              "name": "skos",
+              "uri": "http://www.w3.org/2004/02/skos/core#"
+            },
+            {
+              "name": "rdfs",
+              "uri": "http://www.w3.org/2000/01/rdf-schema#"
+            },
+            {
+              "name": "foaf",
+              "uri": "http://xmlns.com/foaf/0.1/"
+            }
+          ],
+          "baseUri": "https://w3id.org/FAIR-course-UT/2026/group13/data#",
+          "rootNodes": [
+            {
+              "nodeType": "cell-as-resource",
+              "columnName": "country_code",
+              "expression": "\"area/\" + value",
+              "isRowNumberCell": false,
+              "links": [
+                {
+                  "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                  "curie": "rdfs:label",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "country_name",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#isoAlpha3",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#isoAlpha3",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "country_iso3",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "http://www.w3.org/2004/02/skos/core#closeMatch",
+                  "curie": "skos:closeMatch",
+                  "target": {
+                    "nodeType": "cell-as-resource",
+                    "columnName": "countryURI",
+                    "expression": "value",
+                    "isRowNumberCell": false,
+                    "links": [],
+                    "rdfTypes": []
+                  }
+                }
+              ],
+              "rdfTypes": [
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#TradePartnerArea",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#TradePartnerArea"
+                }
+              ]
+            }
+          ]
+        },
+        "description": "Save RDF schema skeleton"
+      }
+    },
+    {
+      "description": "Save RDF schema skeleton",
+      "operation": {
+        "op": "rdf-extension/save-rdf-schema",
+        "schema": {
+          "prefixes": [
+            {
+              "name": "rdf",
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            },
+            {
+              "name": "owl",
+              "uri": "http://www.w3.org/2002/07/owl#"
+            },
+            {
+              "name": "skos",
+              "uri": "http://www.w3.org/2004/02/skos/core#"
+            },
+            {
+              "name": "rdfs",
+              "uri": "http://www.w3.org/2000/01/rdf-schema#"
+            },
+            {
+              "name": "foaf",
+              "uri": "http://xmlns.com/foaf/0.1/"
+            }
+          ],
+          "baseUri": "https://w3id.org/FAIR-course-UT/2026/group13/data#",
+          "rootNodes": [
+            {
+              "nodeType": "cell-as-resource",
+              "columnName": "country_code",
+              "expression": "\"area/\" + value",
+              "isRowNumberCell": false,
+              "links": [
+                {
+                  "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                  "curie": "rdfs:label",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "country_name",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#isoAlpha3",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#isoAlpha3",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "country_iso3",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "http://www.w3.org/2004/02/skos/core#closeMatch",
+                  "curie": "skos:closeMatch",
+                  "target": {
+                    "nodeType": "cell-as-resource",
+                    "columnName": "countryURI",
+                    "expression": "value",
+                    "isRowNumberCell": false,
+                    "links": [],
+                    "rdfTypes": []
+                  }
+                }
+              ],
+              "rdfTypes": [
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#TradePartnerArea",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#TradePartnerArea"
+                }
+              ]
+            }
+          ]
+        },
+        "description": "Save RDF schema skeleton"
+      }
+    },
+    {
+      "description": "Save RDF schema skeleton",
+      "operation": {
+        "op": "rdf-extension/save-rdf-schema",
+        "schema": {
+          "prefixes": [
+            {
+              "name": "rdf",
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            },
+            {
+              "name": "owl",
+              "uri": "http://www.w3.org/2002/07/owl#"
+            },
+            {
+              "name": "skos",
+              "uri": "http://www.w3.org/2004/02/skos/core#"
+            },
+            {
+              "name": "rdfs",
+              "uri": "http://www.w3.org/2000/01/rdf-schema#"
+            },
+            {
+              "name": "foaf",
+              "uri": "http://xmlns.com/foaf/0.1/"
+            }
+          ],
+          "baseUri": "https://w3id.org/FAIR-course-UT/2026/group13/data#",
+          "rootNodes": [
+            {
+              "nodeType": "cell-as-resource",
+              "columnName": "country_code",
+              "expression": "\"area/\" + value",
+              "isRowNumberCell": false,
+              "links": [
+                {
+                  "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                  "curie": "rdfs:label",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "country_name",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#isoAlpha3",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#isoAlpha3",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "country_iso3",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "http://www.w3.org/2004/02/skos/core#closeMatch",
+                  "curie": "skos:closeMatch",
+                  "target": {
+                    "nodeType": "cell-as-resource",
+                    "columnName": "countryURI",
+                    "expression": "value",
+                    "isRowNumberCell": false,
+                    "links": [],
+                    "rdfTypes": []
+                  }
+                }
+              ],
+              "rdfTypes": [
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#TradePartnerArea",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#TradePartnerArea"
+                }
+              ]
+            }
+          ]
+        },
+        "description": "Save RDF schema skeleton"
+      }
+    },
+    {
+      "description": "Save RDF schema skeleton",
+      "operation": {
+        "op": "rdf-extension/save-rdf-schema",
+        "schema": {
+          "prefixes": [
+            {
+              "name": "rdf",
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            },
+            {
+              "name": "owl",
+              "uri": "http://www.w3.org/2002/07/owl#"
+            },
+            {
+              "name": "skos",
+              "uri": "http://www.w3.org/2004/02/skos/core#"
+            },
+            {
+              "name": "rdfs",
+              "uri": "http://www.w3.org/2000/01/rdf-schema#"
+            },
+            {
+              "name": "foaf",
+              "uri": "http://xmlns.com/foaf/0.1/"
+            }
+          ],
+          "baseUri": "https://w3id.org/FAIR-course-UT/2026/group13/data#",
+          "rootNodes": [
+            {
+              "nodeType": "cell-as-resource",
+              "columnName": "country_code",
+              "expression": "\"area/\" + value",
+              "isRowNumberCell": false,
+              "links": [
+                {
+                  "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                  "curie": "rdfs:label",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "country_name",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#isoAlpha3",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#isoAlpha3",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "country_iso3",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "http://www.w3.org/2004/02/skos/core#closeMatch",
+                  "curie": "skos:closeMatch",
+                  "target": {
+                    "nodeType": "cell-as-resource",
+                    "columnName": "countryURI",
+                    "expression": "value",
+                    "isRowNumberCell": false,
+                    "links": [],
+                    "rdfTypes": []
+                  }
+                }
+              ],
+              "rdfTypes": [
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#TradePartnerArea",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#TradePartnerArea"
+                }
+              ]
+            }
+          ]
+        },
+        "description": "Save RDF schema skeleton"
+      }
+    },
+    {
+      "description": "Save RDF schema skeleton",
+      "operation": {
+        "op": "rdf-extension/save-rdf-schema",
+        "schema": {
+          "prefixes": [
+            {
+              "name": "rdf",
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            },
+            {
+              "name": "owl",
+              "uri": "http://www.w3.org/2002/07/owl#"
+            },
+            {
+              "name": "skos",
+              "uri": "http://www.w3.org/2004/02/skos/core#"
+            },
+            {
+              "name": "rdfs",
+              "uri": "http://www.w3.org/2000/01/rdf-schema#"
+            },
+            {
+              "name": "foaf",
+              "uri": "http://xmlns.com/foaf/0.1/"
+            }
+          ],
+          "baseUri": "https://w3id.org/FAIR-course-UT/2026/group13/data#",
+          "rootNodes": [
+            {
+              "nodeType": "cell-as-resource",
+              "columnName": "country_code",
+              "expression": "\"area/\" + value",
+              "isRowNumberCell": false,
+              "links": [
+                {
+                  "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                  "curie": "rdfs:label",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "country_name",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#isoAlpha3",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#isoAlpha3",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "country_iso3",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "http://www.w3.org/2004/02/skos/core#closeMatch",
+                  "curie": "skos:closeMatch",
+                  "target": {
+                    "nodeType": "cell-as-resource",
+                    "columnName": "countryURI",
+                    "expression": "value",
+                    "isRowNumberCell": false,
+                    "links": [],
+                    "rdfTypes": []
+                  }
+                }
+              ],
+              "rdfTypes": [
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#TradePartnerArea",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#TradePartnerArea"
+                }
+              ]
+            }
+          ]
+        },
+        "description": "Save RDF schema skeleton"
+      }
+    },
+    {
+      "description": "Save RDF schema skeleton",
+      "operation": {
+        "op": "rdf-extension/save-rdf-schema",
+        "schema": {
+          "prefixes": [
+            {
+              "name": "rdf",
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            },
+            {
+              "name": "owl",
+              "uri": "http://www.w3.org/2002/07/owl#"
+            },
+            {
+              "name": "skos",
+              "uri": "http://www.w3.org/2004/02/skos/core#"
+            },
+            {
+              "name": "rdfs",
+              "uri": "http://www.w3.org/2000/01/rdf-schema#"
+            },
+            {
+              "name": "foaf",
+              "uri": "http://xmlns.com/foaf/0.1/"
+            }
+          ],
+          "baseUri": "https://w3id.org/FAIR-course-UT/2026/group13/data#",
+          "rootNodes": [
+            {
+              "nodeType": "cell-as-resource",
+              "columnName": "country_code",
+              "expression": "\"area/\" + value",
+              "isRowNumberCell": false,
+              "links": [
+                {
+                  "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+                  "curie": "rdfs:label",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "country_name",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#isoAlpha3",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#isoAlpha3",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "country_iso3",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                }
+              ],
+              "rdfTypes": [
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#TradePartnerArea",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#TradePartnerArea"
+                }
+              ]
+            }
+          ]
+        },
+        "description": "Save RDF schema skeleton"
+      }
+    }
+  ]
+}

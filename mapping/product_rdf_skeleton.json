@@ -1,0 +1,83 @@
+{
+  "prefixes": [
+    {
+      "name": "rdf",
+      "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    },
+    {
+      "name": "owl",
+      "uri": "http://www.w3.org/2002/07/owl#"
+    },
+    {
+      "name": "skos",
+      "uri": "http://www.w3.org/2004/02/skos/core#"
+    },
+    {
+      "name": "rdfs",
+      "uri": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    {
+      "name": "foaf",
+      "uri": "http://xmlns.com/foaf/0.1/"
+    }
+  ],
+  "baseUri": "https://w3id.org/FAIR-course-UT/2026/group13/data#",
+  "rootNodes": [
+    {
+      "nodeType": "cell-as-resource",
+      "columnName": "code",
+      "expression": "\"product/\" + value",
+      "isRowNumberCell": false,
+      "links": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#notation",
+          "curie": "skos:notation",
+          "target": {
+            "nodeType": "cell-as-literal",
+            "columnName": "code",
+            "expression": "value",
+            "isRowNumberCell": false
+          }
+        },
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#prefLabel",
+          "curie": "skos:prefLabel",
+          "target": {
+            "nodeType": "cell-as-literal",
+            "columnName": "description",
+            "expression": "value",
+            "lang": "en",
+            "isRowNumberCell": false
+          }
+        },
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#inScheme",
+          "curie": "skos:inScheme",
+          "target": {
+            "nodeType": "resource",
+            "value": "https://w3id.org/FAIR-course-UT/2026/group13/data#HSProductScheme",
+            "links": [],
+            "rdfTypes": []
+          }
+        }
+      ],
+      "rdfTypes": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+          "curie": "skos:Concept"
+        }
+      ]
+    },
+    {
+      "nodeType": "resource",
+      "value": "https://w3id.org/FAIR-course-UT/2026/group13/data#HSProductScheme",
+      "links": [],
+      "rdfTypes": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+          "curie": "skos:ConceptScheme"
+        }
+      ]
+    }
+  ]
+}

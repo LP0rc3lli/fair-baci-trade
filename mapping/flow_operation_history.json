@@ -1,0 +1,334 @@
+{
+  "entries": [
+    {
+      "description": "Save RDF schema skeleton",
+      "operation": {
+        "op": "rdf-extension/save-rdf-schema",
+        "schema": {
+          "prefixes": [
+            {
+              "name": "rdf",
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            },
+            {
+              "name": "owl",
+              "uri": "http://www.w3.org/2002/07/owl#"
+            },
+            {
+              "name": "rdfs",
+              "uri": "http://www.w3.org/2000/01/rdf-schema#"
+            },
+            {
+              "name": "foaf",
+              "uri": "http://xmlns.com/foaf/0.1/"
+            }
+          ],
+          "baseUri": "https://w3id.org/FAIR-course-UT/2026/group13/data#",
+          "rootNodes": [
+            {
+              "nodeType": "cell-as-resource",
+              "columnName": "t",
+              "expression": "\"flow/\" + cells[\"t\"].value + \"-\" + cells[\"i\"].value + \"-\" + cells[\"j\"].value + \"-\" + cells[\"k\"].value",
+              "isRowNumberCell": false,
+              "links": [
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#year",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#year",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "t",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#exporterArea",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#exporterArea",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "i",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#importerArea",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#importerArea",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "j",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#product",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#product",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "k",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#value",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#value",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "v",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                }
+              ],
+              "rdfTypes": [
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#TradeFlow",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#TradeFlow"
+                }
+              ]
+            }
+          ]
+        },
+        "description": "Save RDF schema skeleton"
+      }
+    },
+    {
+      "description": "Save RDF schema skeleton",
+      "operation": {
+        "op": "rdf-extension/save-rdf-schema",
+        "schema": {
+          "prefixes": [
+            {
+              "name": "qudt",
+              "uri": "http://qudt.org/schema/qudt/"
+            },
+            {
+              "name": "rdf",
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            },
+            {
+              "name": "owl",
+              "uri": "http://www.w3.org/2002/07/owl#"
+            },
+            {
+              "name": "rdfs",
+              "uri": "http://www.w3.org/2000/01/rdf-schema#"
+            },
+            {
+              "name": "foaf",
+              "uri": "http://xmlns.com/foaf/0.1/"
+            }
+          ],
+          "baseUri": "https://w3id.org/FAIR-course-UT/2026/group13/data#",
+          "rootNodes": [
+            {
+              "nodeType": "cell-as-resource",
+              "columnName": "t",
+              "expression": "\"flow/\" + cells[\"t\"].value + \"-\" + cells[\"i\"].value + \"-\" + cells[\"j\"].value + \"-\" + cells[\"k\"].value",
+              "isRowNumberCell": false,
+              "links": [
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#year",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#year",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "t",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#exporterArea",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#exporterArea",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "i",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#importerArea",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#importerArea",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "j",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#product",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#product",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "k",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#value",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#value",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "v",
+                    "expression": "value",
+                    "isRowNumberCell": false
+                  }
+                }
+              ],
+              "rdfTypes": [
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#TradeFlow",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#TradeFlow"
+                }
+              ]
+            }
+          ]
+        },
+        "description": "Save RDF schema skeleton"
+      }
+    },
+    {
+      "description": "Save RDF schema skeleton",
+      "operation": {
+        "op": "rdf-extension/save-rdf-schema",
+        "schema": {
+          "prefixes": [
+            {
+              "name": "qudt",
+              "uri": "http://qudt.org/schema/qudt/"
+            },
+            {
+              "name": "rdf",
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            },
+            {
+              "name": "owl",
+              "uri": "http://www.w3.org/2002/07/owl#"
+            },
+            {
+              "name": "rdfs",
+              "uri": "http://www.w3.org/2000/01/rdf-schema#"
+            },
+            {
+              "name": "foaf",
+              "uri": "http://xmlns.com/foaf/0.1/"
+            }
+          ],
+          "baseUri": "https://w3id.org/FAIR-course-UT/2026/group13/data#",
+          "rootNodes": [
+            {
+              "nodeType": "cell-as-resource",
+              "columnName": "t",
+              "expression": "\"flow/\" + cells[\"t\"].value + \"-\" + cells[\"i\"].value + \"-\" + cells[\"j\"].value + \"-\" + cells[\"k\"].value",
+              "isRowNumberCell": false,
+              "links": [
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#year",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#year",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "t",
+                    "expression": "value",
+                    "valueType": "http://www.w3.org/2001/XMLSchema#gYear",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#exporterArea",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#exporterArea",
+                  "target": {
+                    "nodeType": "cell-as-resource",
+                    "columnName": "i",
+                    "expression": "\"area/\" + value",
+                    "isRowNumberCell": false,
+                    "links": [],
+                    "rdfTypes": []
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#importerArea",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#importerArea",
+                  "target": {
+                    "nodeType": "cell-as-resource",
+                    "columnName": "j",
+                    "expression": "\"area/\" + value",
+                    "isRowNumberCell": false,
+                    "links": [],
+                    "rdfTypes": []
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#product",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#product",
+                  "target": {
+                    "nodeType": "cell-as-resource",
+                    "columnName": "k",
+                    "expression": "\"product/\" + value",
+                    "isRowNumberCell": false,
+                    "links": [],
+                    "rdfTypes": []
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#value",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#value",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "v",
+                    "expression": "value",
+                    "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#valueComment",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#valueComment",
+                  "target": {
+                    "nodeType": "literal",
+                    "value": "Value in thousands of current USD, per CEPII methodology",
+                    "lang": "en"
+                  }
+                },
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#quantity",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#quantity",
+                  "target": {
+                    "nodeType": "cell-as-literal",
+                    "columnName": "q",
+                    "expression": "value",
+                    "valueType": "http://www.w3.org/2001/XMLSchema#decimal",
+                    "isRowNumberCell": false
+                  }
+                },
+                {
+                  "uri": "http://qudt.org/schema/qudt/hasUnit",
+                  "curie": "qudt:hasUnit",
+                  "target": {
+                    "nodeType": "cell-as-resource",
+                    "columnName": "q",
+                    "expression": "if(isNonBlank(value), \"http://qudt.org/vocab/unit/TON_Metric\", \"\")",
+                    "isRowNumberCell": false,
+                    "links": [],
+                    "rdfTypes": []
+                  }
+                }
+              ],
+              "rdfTypes": [
+                {
+                  "uri": "https://w3id.org/FAIR-course-UT/2026/group13/data#TradeFlow",
+                  "curie": ":https://w3id.org/FAIR-course-UT/2026/group13/data#TradeFlow"
+                }
+              ]
+            }
+          ]
+        },
+        "description": "Save RDF schema skeleton"
+      }
+    }
+  ]
+}
