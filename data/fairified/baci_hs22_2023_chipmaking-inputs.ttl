@@ -32397,3 +32397,8 @@ ns1:HSProductScheme a skos:ConceptScheme .
     skos:notation "381800" ;
     skos:prefLabel "Chemical elements: doped for use in electronics, in the form of discs, wafers or similar forms: chemical compounds doped for use in electronics"@en .
 
+
+@prefix ont: <https://w3id.org/FAIR-course-UT/2026/group13/ont#> .
+
+ns1:TradeFlow owl:equivalentClass ont:TradeFlow .
+ns1:TradePartnerArea owl:equivalentClass ont:TradePartnerArea .
