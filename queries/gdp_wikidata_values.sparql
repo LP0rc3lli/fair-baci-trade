@@ -1,0 +1,17 @@
+# CQ2, step 2: run this directly against https://query.wikidata.org/sparql
+# (or via curl with a real User-Agent header) using the Wikidata IDs obtained from
+# step 1 (the local query over owl:sameAs links for the top 10 importers of 848620).
+# This is the query that actually produced the results in competency_questions.md.
+
+SELECT ?country ?countryLabel ?gdp WHERE {
+  VALUES ?country { wd:Q148 wd:Q884 wd:Q30 wd:Q334 wd:Q17 wd:Q27 wd:Q142 wd:Q183 }
+  ?country wdt:P2131 ?gdp .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" }
+} ORDER BY DESC(?gdp)
+
+# Example curl invocation (a real User-Agent is required by Wikidata's bot policy):
+#
+# curl -s -H "Accept: application/sparql-results+json" \
+#   -H "User-Agent: FAIR-course-UT-group13/1.0 (student project)" \
+#   --data-urlencode 'query=<the query above, as one line>' \
+#   https://query.wikidata.org/sparql

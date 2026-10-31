@@ -1,0 +1,17 @@
+# CQ1: top exporters of a given product (dataset alone, no external join)
+# Run against the GraphDB repository holding the FAIRified data.
+
+PREFIX ex: <https://w3id.org/FAIR-course-UT/2026/group13/data#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?area ?areaLabel (SUM(?value) AS ?totalValue)
+WHERE {
+  ?flow a ex:TradeFlow ;
+        ex:product <https://w3id.org/FAIR-course-UT/2026/group13/data#product/848620> ;   # chip-making machinery; swap for .../product/381800 for doped wafers
+        ex:exporterArea ?area ;
+        ex:value ?value .
+  OPTIONAL { ?area rdfs:label ?areaLabel }
+}
+GROUP BY ?area ?areaLabel
+ORDER BY DESC(?totalValue)
+LIMIT 10

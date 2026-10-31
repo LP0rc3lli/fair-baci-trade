@@ -1,0 +1,29 @@
+# CQ2: top importers of chip-making machinery, joined with their nominal GDP via Wikidata.
+# Requires the GraphDB host to reach query.wikidata.org (outbound internet access).
+# P2131 = nominal GDP, verified live against the Wikidata Query Service before use.
+
+
+PREFIX ex: <https://w3id.org/FAIR-course-UT/2026/group13/data#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT ?area ?totalValue ?gdp
+WHERE {
+  {
+    SELECT ?area (SUM(?value) AS ?totalValue)
+    WHERE {
+      ?flow a ex:TradeFlow ;
+            ex:product <https://w3id.org/FAIR-course-UT/2026/group13/data#product/848620> ;
+            ex:importerArea ?area ;
+            ex:value ?value .
+    }
+    GROUP BY ?area
+    ORDER BY DESC(?totalValue)
+    LIMIT 10
+  }
+  ?area owl:sameAs ?wd .
+  SERVICE <https://query.wikidata.org/sparql> {
+    ?wd wdt:P2131 ?gdp .
+  }
+}
+ORDER BY DESC(?totalValue)
