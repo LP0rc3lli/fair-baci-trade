@@ -4,6 +4,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @base <https://w3id.org/FAIR-course-UT/2026/group13/ont#> .
 
 <https://w3id.org/FAIR-course-UT/2026/group13/ont> rdf:type owl:Ontology .
@@ -37,7 +38,8 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  https://w3id.org/FAIR-course-UT/2026/group13/ont#product
 :product rdf:type owl:ObjectProperty ;
          rdfs:domain :TradeFlow ;
-         rdfs:comment "The HS6-coded product traded in this trade flow." .
+         rdfs:range skos:Concept ;
+         rdfs:comment "The HS6-coded product traded in this trade flow, reusing skos:Concept (SKOS core) rather than a custom class, since an HS code is an entry in a classification scheme." .
 
 
 #################################################################

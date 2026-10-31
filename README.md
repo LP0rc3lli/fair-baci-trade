@@ -24,7 +24,7 @@ The exact slice definition lives in [`workflow/config.yaml`](workflow/config.yam
 | `ontology/` | A small Protégé-authored ontology (`TradeFlow`, `TradePartnerArea` classes and their properties) |
 | `mapping/` | OpenRefine operation-history exports and the RDF skeletons used to triplify the data |
 | `metadata/schemas/` | The Dataset and Distribution SHACL metadata schemas, exported from the FAIR Data Point |
-| `metadata/records/` | The 3 metadata records (1 dataset + 2 distributions), exported as Turtle from the FAIR Data Point |
+| `metadata/records/` | The 4 metadata records (1 catalog + 1 dataset + 2 distributions), exported as Turtle from the FAIR Data Point |
 | `fdp/` | Docker Compose + config for running a local FAIR Data Point against a GraphDB triple store |
 | `workflow/` | The Snakemake pipeline (slice definition, lookups, measurements) |
 | `queries/` | Competency questions and (optional) SPARQL |

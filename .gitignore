@@ -234,3 +234,5 @@ fdp/graphdb/
 
 # Python virtual environment
 .venv/
+
+/report_work
